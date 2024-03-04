@@ -4,7 +4,7 @@ do{
     squares = prompt("Select a grid size of y (YxY)");
 
     if(squares > 99){
-    prompt("Please enter a value that is less than 100");
+    alert("Please enter a value that is less than 100");
 }
 
 }while(squares > 99)
