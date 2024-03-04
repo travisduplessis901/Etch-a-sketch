@@ -1,19 +1,18 @@
 const container = document.querySelector("#container");
-const rows = document.createElement("div");
-const columns = document.createElement("div");
-
-rows.classList.add("rowContainer");
-columns.classList.add("columnsContainer");
-
-container.appendChild(rows);
-container.appendChild(columns);
 
 for (i = 0; i < 16; i++){
-    const divRow = document.createElement("div");
-    divRow.classList.add("rows");
-    rows.appendChild(divRow);
 
-    const divColumns = document.createElement("div");
-    divColumns.classList.add("columns");
-    columns.appendChild(divColumns);
-}
+        const grid = document.createElement("div");
+        grid.classList.add("grid");
+        container.appendChild(grid);
+
+        for (j = 0; j < 16; j++){
+            const row = document.createElement("div");
+            row.classList.add("row");
+            grid.appendChild(row);
+        }
+
+    
+    }
+    
+    
