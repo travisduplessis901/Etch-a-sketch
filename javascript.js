@@ -16,3 +16,10 @@ for (i = 0; i < 16; i++){
     }
     
     
+let rowArray = document.querySelectorAll(".row");
+
+rowArray.forEach(function (rowA){
+    rowA.addEventListener("mouseover", function(){
+        this.style.background = "black";
+    })
+})
