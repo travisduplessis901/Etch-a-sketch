@@ -1,6 +1,5 @@
-
-
 #container{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     
@@ -20,9 +19,14 @@
 
 .row{
     background-color: peachpuff;
-    border: 3px solid brown;
+   
     height: 5.625%;
     width: auto;
+}
+
+#extras{
+    position: fixed;
+    bottom: 30px;
 }
 
 
