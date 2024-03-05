@@ -9,6 +9,9 @@ do{
 
 }while(squares > 99)
 
+let squareHeight = (90/squares) * 100;
+
+
 const container = document.querySelector("#container");
 
 for (i = 0; i < squares; i++){
@@ -20,6 +23,7 @@ for (i = 0; i < squares; i++){
         for (j = 0; j < squares; j++){
             const row = document.createElement("div");
             row.classList.add("row");
+            row.style.height = squareHeight + "%";
             grid.appendChild(row);
         }
 
@@ -31,7 +35,11 @@ let rowArray = document.querySelectorAll(".row");
 
 rowArray.forEach(function (rowA){
     rowA.addEventListener("mouseover", function(){
-        this.style.background = "black";
+        let rgb1 = Math.floor(Math.random() * 256);
+        let rgb2 = Math.floor(Math.random() * 256);
+        let rgb3 = Math.floor(Math.random() * 256);
+
+        this.style.background = "rgb(" + rgb1 + " " + rgb2 + " " + rgb3 + ")";
     })
 })
 
